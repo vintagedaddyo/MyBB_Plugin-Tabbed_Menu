@@ -1,0 +1,79 @@
+http://www.mybbcentral.com/thread-6945.html
+
+
+Common Tabbed Menu Problems and Solutions
+To Be Completed
+-
+
+Download
+http://www.mybbcentral.com/thread-2439.html
+
+Most Common Problem
+Question
+First tab is working but the other ones are not?! (Click to Hide)
+[Image: tabbed.png]
+Solution
+Add a </div> at the very end in forumbit_depth1_cat (Click to Hide)
+[Image: tabbed2.png]
+
+Question
+When I click on a tab, nothing happens, the url only changes to index.php#? (Click to Hide)
+[Image: tabbed3.png]
+Solution
+Go to "headerinclude" ~ It can be found in Ungrouped Templates. Paste This at the very bottom. (Click to View) *
+
+<script type="text/javascript" src="{$mybb->settings['bburl']}/jscripts/tabcontent.js">
+/***********************************************
+* Tab Content script v2.2- copyright Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+***********************************************/
+</script> 
+
+* not needed anymore as the template insert is done by the plugin
+
+Question
+The tabs are not working for members, but for Staff it works great?
+Solution
+Forums or Catergories with special permissions cannot be placed at the top of the tab. Example VIP Sections
+
+Question
+A category is just floating around on each tab?
+Solution
+The catergory hasnt been assigned a tab. Multiple catergories per tag can be achieved by holding CTRL while selecting the catergories.
+
+Question
+The Tabbed Menu ain't working with another theme?
+Solution
+1st. Create a tabbed.css in your new theme, and copy the code from tabbed.css in the other theme.
+Then follow Labrocca's troubleshooting guide and this guide.
+
+Question
+How do I organize the tabs?
+Solution :
+There currently is no organizing system. Create the number of tabs you require with numbered names, check their order on your forum, then assign the catergories to the relevant tabs.
+
+Question
+Why can't I download the Tabbed Menu plugin?
+Solution
+You have to upgrade to download attachments at MyBBCentral.com
+
+Question
+This does not work on 1.6?
+Solution
+Yes, after following this guide.
+
+Question
+There are double tabs?
+Solution
+Go to the index template, and ensure that only one {tabmenu} appears.
+
+-
+
+If this doesnt work, check Labrocca's Troubleshooting Guide
+
+-
+
+Original Created by: Elite Dash
+Updated by: BleepyEvans 
+Updated for 1.8 usages by: Vintagedaddyo

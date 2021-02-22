@@ -1,0 +1,3 @@
+Extract plugin .zip file contents, upload the contents within "/Upload" to your forums root directory.
+
+Go into ACP and activate plugin, then you can visit forums administration section ie:  Home » Forum Management and visit the "tab menu' menu item
